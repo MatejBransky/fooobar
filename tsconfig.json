@@ -16,7 +16,7 @@
     "noEmit": true,
     "jsx": "react",
     "paths": {
-      "@matejbransky/react-lib": ["."]
+      "@matejbransky/fooobar": ["."]
     }
   },
   "include": ["./demo", "./src", "vite.config.ts", "jest-setup.ts"]
