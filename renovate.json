@@ -13,10 +13,9 @@
     },
     {
       "matchCurrentVersion": ">= 1.0.0",
-      "minor": {
-        "groupName": "all non-breaking updates",
-        "groupSlug": "non-breaking"
-      }
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-breaking updates",
+      "groupSlug": "non-breaking"
     }
   ]
 }
