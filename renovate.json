@@ -4,11 +4,19 @@
   "baseBranches": ["dev"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": ">1",
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch"
+      "matchCurrentVersion": "< 1.0.0",
+      "separateMinorPatch": true,
+      "patch": {
+        "groupName": "all non-breaking updates",
+        "groupSlug": "non-breaking"
+      }
+    },
+    {
+      "matchCurrentVersion": ">= 1.0.0",
+      "minor": {
+        "groupName": "all non-breaking updates",
+        "groupSlug": "non-breaking"
+      }
     }
   ]
 }
