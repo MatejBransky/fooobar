@@ -6,7 +6,7 @@
     {
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"],
-      "allowedVersions": ">1",
+      "matchCurrentVersion": ">1",
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     }
